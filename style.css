@@ -1,0 +1,290 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: verdana,  sans-serif;
+    background-image: url('images/background-image.webp.webp');
+    background-color: #2c3e50;
+    background-size: cover;
+    background-position: center;
+    line-height: 1.6;
+} 
+
+ .header{
+    padding:1rem 0;
+    background: #333;
+    color: #fff;
+    
+} 
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+padding: 0;
+}
+
+
+
+nav ul li  {
+margin: 0 15px;
+
+}
+
+
+nav ul li a {
+color: #ffd700;
+text-decoration: none;
+font-size: 1.2rem;
+
+
+
+}
+nav ul li a {
+  color: #fff;
+}
+main{
+  text-align: center;
+  padding: 20px;
+}
+
+
+.intro{
+  margin: 50px auto;
+  max-width: 600px;
+  background: #333;
+  padding: 20px;
+  border: 1px solid #ffd700;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1{
+  color: #ffd700;
+}
+
+
+.intro p{
+  color: #fff;
+  margin: 20px 0;
+}
+
+
+
+
+.intro .btn{
+  display: inline-block;
+  background: #333;
+color: #333;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 5px;
+transition: background 0.3s;
+}
+
+.intro.btn:hover{
+background: #333;
+color: #ffd700;
+}
+.about{
+margin: 50px auto;
+max-width: 800px;
+background: #fff;
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.about h2{
+color: #333;
+margin-bottom: 15px;
+}
+.about p{
+  color: #333;
+  line-height: 2 ;
+
+}
+.contact{
+  background: #333;
+  padding: 20px;
+margin: 50px auto;
+max-width: 800px;
+border:  1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+text-align: center;
+
+}
+
+.contact h2{
+color: #ffd700;
+margin-bottom: 20px;
+
+}
+
+
+
+.contact form{
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+
+.contact label{
+  text-align: right;
+  font-size:1rem;
+  color: #ffd700;
+}
+
+.contact input,.contact textarea{
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+font-size: 1rem;
+
+}
+
+.contact button {
+  background: #ffd700;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background 0.3s;
+
+
+}
+
+.contact button:hover {
+background: #333;
+color: #ffd700;
+
+}
+
+/* قسم الخدمات */
+.services {
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.services h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.service-item {
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  color: #ffd700; /* أصفر */
+}
+
+.service-item p {
+  color: #666;
+  line-height: 1.8;
+}
+
+
+/* قسم المقالات */
+.blog {
+  margin: 50px auto;
+  max-width: 900px;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.blog-post {
+  margin-bottom: 30px;
+}
+
+.blog-post h3 {
+  color: #ffd700; /* أصفر */
+}
+
+.blog-post p {
+  color: #666;
+}
+
+.blog-post a {
+  color: #333; /* أصفر */
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  color: #333;
+}
+
+/* تنسيق جملة "اقرئي المزيد" داخل صندوق */
+.read-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffd700; /* اللون الأصفر */
+  color: #000; /* اللون الأسود للنص */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #ffcc00; /* تغيير اللون عند المرور */
+  transform: translateY(-3px); /* تأثير رفع عند المرور */
+}
+
+.read-more-btn:active {
+  background-color: #e6b800; /* تغيير اللون عند الضغط */
+}
+
+
+/* صفحة المقالات */
+
+.blog-post-full {
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.blog-post-full h2 {
+  color: #ffd700; /* أصفر */
+  margin-bottom: 20px;
+}
+
+.blog-post-full p {
+  color: #666;
+  line-height: 1.8;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+text-align: center;
+    padding: 10px 0;
+
+} 
+footer p{
+  margin: 0;
+}
