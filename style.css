@@ -6,22 +6,50 @@ body {
     background-size: cover;
     background-position: center;
     line-height: 1.6;
+    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
 } 
 
-/* تخصيص خط اسم الموقع */
-.site-header {
-  background-color: #333; /* خلفية داكنة */
-  padding: 20px;
-  text-align: center;
+.site-name h1 {
+  font-size: 50px;
+  color: #ffd700; 
+  font-family: verdana, sans-serif; 
+  text-align: center; 
+  background: #444;
 }
 
-.site-title {
-  color: #ffd700; /* اللون الذهبي */
-  font-size: 3rem; /* حجم الخط الكبير */
-  font-family: 'Arial', sans-serif; /* نوع الخط */
-  font-weight: bold;
-  margin: 0;
+
+.menu-toggle {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
 }
+
+.nav-links {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+.nav-links.active {
+  display: block;
+}
+
+.nav-links li {
+  padding: 10px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+
+
 
  .header{
     padding:1rem 0;
@@ -194,11 +222,11 @@ color: #ffd700;
 }
 
 #services .service-box {
-  background-color: #ffd700; /* اللون الأصفر لخلفية المربع */
+  background-color: #ffd700; 
   margin: 10px;
   padding: 20px;
-  border-radius: 10px; /* لجعل الزوايا دائرية */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+  border-radius: 10px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -210,17 +238,16 @@ color: #ffd700;
 }
 
 #services .service-box:hover {
-  transform: scale(1.05); /* تكبير المربع قليلاً عند التمرير */
-  background-color: #ffcc00; /* تغيير اللون إلى لون أفتح عند التمرير */
+  transform: scale(1.05); 
+  background-color: #ffcc00; 
 }
 
 #services .service-box a:hover {
-  color: #fff; /* تغيير لون النص إلى الأبيض عند التمرير */
+  color: #fff; 
 }
 
 
 
-/* قسم المقالات */
 .blog {
   margin: 50px auto;
   max-width: 900px;
@@ -241,7 +268,7 @@ color: #ffd700;
 }
 
 .blog-post h3 {
-  color: #fff; /* أصفر */
+  color: #fff; 
 }
 
 .blog-post p {
@@ -249,7 +276,7 @@ color: #ffd700;
 }
 
 .blog-post a {
-  color: #333; /* أصفر */
+  color: #333; 
   text-decoration: none;
 }
 
@@ -257,12 +284,12 @@ color: #ffd700;
   color: #333;
 }
 
-/* تنسيق جملة "اقرئي المزيد" داخل صندوق */
+
 .read-more-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ffd700; /* اللون الأصفر */
-  color: #000; /* اللون الأسود للنص */
+  background-color: #ffd700; 
+  color: #000; 
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
@@ -271,17 +298,17 @@ color: #ffd700;
 }
 
 .read-more-btn:hover {
-  background-color: #ffcc00; /* تغيير اللون عند المرور */
-  transform: translateY(-3px); /* تأثير رفع عند المرور */
+  background-color: #ffcc00; 
+  transform: translateY(-3px);
 }
 
 .read-more-btn:active {
-  background-color: #e6b800; /* تغيير اللون عند الضغط */
+  background-color: #e6b800; 
 }
 
 
 
-/* تنسيق قسم المقالات */
+
 #articles {
   padding: 40px;
   background-color: #444;
@@ -316,7 +343,7 @@ color: #ffd700;
 
 
 
-/* التصميم العام */
+
 .consultations {
   margin: 30px auto;
   padding: 20px;
@@ -359,7 +386,7 @@ color: #ffd700;
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #ffcc00; /* لون أصفر */
+  background-color: #ffcc00; 
   border-radius: 5px;
   text-decoration: none;
   text-align: center;
@@ -372,13 +399,13 @@ color: #ffd700;
 
 /* تصميم الاستشارات المجانية */
 .consultation-free {
-  background-color: #f0f8ff; /* لون خلفية استشارات مجانية */
+  background-color: #f0f8ff; 
   border-left: 5px solid #00b3b3;
 }
 
 /* تصميم الاستشارات المدفوعة */
 .consultation-paid {
-  background-color: #fff8e6; /* لون خلفية استشارات مدفوعة */
+  background-color: #fff8e6; 
   border-left: 5px solid #ff6600;
 }
 
@@ -466,7 +493,6 @@ color: #ffd700;
   background-color: #e64a19;
 }
 
-/* تأثير عند التمرير فوق المربع */
 .subscription-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -474,20 +500,88 @@ color: #ffd700;
 
 /* تخصيص الاشتراك في التمارين */
 .subscription-workouts {
-  background-color: #e1f7fc; /* لون خلفية للاشتراك في التمارين */
+  background-color: #e1f7fc; 
   border-left: 5px solid #00b3b3;
 }
 
 /* تخصيص الاشتراك في التغذية */
 .subscription-nutrition {
-  background-color: #fff8e6; /* لون خلفية للاشتراك في التغذية */
+  background-color: #fff8e6; 
   border-left: 5px solid #ffcc00;
 }
 
 /* تخصيص الاشتراك المميز */
 .subscription-premium {
-  background-color: #f0e1ff; /* لون خلفية للاشتراك المميز */
+  background-color: #f0e1ff; 
   border-left: 5px solid #9c27b0;
+}
+
+/* تنسيق الأقسام */
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  font-size: 24px;
+  color: #555;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+/* فقرة داخل كل قسم */
+p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* القوائم */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+ul li strong {
+  color: #222;
+}
+
+/* تنسيق الروابط */
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f3a847;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #f38b2d;
+}
+
+/* تنسيق النص */
+ul li p {
+  font-size: 14px;
+  color: #777;
 }
 
 

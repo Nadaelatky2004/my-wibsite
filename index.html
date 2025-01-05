@@ -1,43 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع التدريب الرياضي</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fit Life</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- اسم الموقع في أعلى الصفحة -->
-  <header class="site-header">
-    <h1 class="site-title">Fit Life 🏋🏽‍♀ </h1>
- 
- </header>
-
- 
-    <!-- <nav>
-      <ul>
-      <li><a href="index.html"> الرئيسية</a></li>
-      <li><a href="services.html"> الخدمات</a></li>
-      <li><a href="blog.html"> المقالات</a></li>
-  
-      </ul>
-      </nav> -->
-
- <!-- أيقونة شريط التنقل (ثلاثة خطوط) -->
- <div class="menu-icon" id="menu-icon">
-  &#9776; <!-- رمز الثلاث خطوط -->
+  <header>
+<div class="site-name">
+  <h1>Fit Life 🏋‍♀</h1>
 </div>
+  <!-- زر الثلاثة شروط -->
+  <div class="menu-toggle">☰</div>
 
-<!-- القائمة المنبثقة -->
-<nav id="nav-menu" class="nav-menu">
-  <ul>
+  <!-- روابط التنقل -->
+  <ul class="nav-links">
     <li><a href="index.html">الرئيسية</a></li>
     <li><a href="services.html">الخدمات</a></li>
-
+    <li><a href="blog.html">المقالات</a></li>
   </ul>
-</nav>
-</header>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
 
 
@@ -65,15 +57,7 @@
 <section id="services">
   <h2>خدماتنا</h2>
   <p>نحن نقدم مجموعة من الخدمات التي تساعدك على تحسين لياقتك البدنية وتناول الطعام بشكل صحي ومتوازن:</p>
-  <!-- <div class="service-box">
-    <a href="workouts.html">التمارين</a>
-  </div>
-  <div class="service-box">
-    <a href="nutrition.html">التغذية</a>
-  </div> -->
-  <!-- <div class="service-box">
-    <a href="consultations.html">الاستشارات</a>
-  </div> -->
+
   <div class="service-box">
     <a href="subscriptions.html">الاشتراكات</a>
   </div>
