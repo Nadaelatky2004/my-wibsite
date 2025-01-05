@@ -5,23 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>موقع التدريب الرياضي</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css">
 </head>
 <body>
   <!-- اسم الموقع في أعلى الصفحة -->
   <header class="site-header">
-    <h1 class="site-title">Fit Life</h1>
-  </header>
+    <h1 class="site-title">Fit Life 🏋🏽‍♀ </h1>
+ 
+ </header>
 
-
-  <header>
-    <nav>
+ 
+    <!-- <nav>
       <ul>
       <li><a href="index.html"> الرئيسية</a></li>
       <li><a href="services.html"> الخدمات</a></li>
       <li><a href="blog.html"> المقالات</a></li>
   
       </ul>
-      </nav>
+      </nav> -->
+
+ <!-- أيقونة شريط التنقل (ثلاثة خطوط) -->
+ <div class="menu-icon" id="menu-icon">
+  &#9776; <!-- رمز الثلاث خطوط -->
+</div>
+
+<!-- القائمة المنبثقة -->
+<nav id="nav-menu" class="nav-menu">
+  <ul>
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="services.html">الخدمات</a></li>
+
+  </ul>
+</nav>
+</header>
+
+
+
 <main>
 <section class="intro">
 
@@ -39,19 +58,6 @@
 
 </section>
 
- <!-- قسم الخدمات
- <section id="services">
-  <h2>خدماتنا</h2>
-  <p>نحن نقدم مجموعة من الخدمات التي تساعدك على تحسين لياقتك البدنية وتناول الطعام بشكل صحي ومتوازن:</p>
-  <ul>
-    <li><a href="workouts.html">التمارين</a></li>
-    <li><a href="nutrition.html">التغذية</a></li>
-    <li><a href="consultations.html">الاستشارات</a></li>
-    <li><a href="subscriptions.html">الاشتراكات</a></li>
-    <li><a href="programs.html">البرامج</a></li>
-  </ul>
-</section> -->
-
 
 
 
@@ -59,19 +65,46 @@
 <section id="services">
   <h2>خدماتنا</h2>
   <p>نحن نقدم مجموعة من الخدمات التي تساعدك على تحسين لياقتك البدنية وتناول الطعام بشكل صحي ومتوازن:</p>
-  <div class="service-box">
+  <!-- <div class="service-box">
     <a href="workouts.html">التمارين</a>
   </div>
   <div class="service-box">
     <a href="nutrition.html">التغذية</a>
-  </div>
-  <div class="service-box">
+  </div> -->
+  <!-- <div class="service-box">
     <a href="consultations.html">الاستشارات</a>
-  </div>
+  </div> -->
   <div class="service-box">
     <a href="subscriptions.html">الاشتراكات</a>
   </div>
 
+</section>
+
+<section id="articles">
+  <h2>المقالات</h2>
+ 
+    <!-- مقال أول -->
+    <article class="blog-post">
+      <h3>كيفية بناء خطة تدريب ناجحة</h3>
+      <p>في هذا المقال، سنتناول كيفية وضع خطة تدريب فعالة لزيادة القوة واللياقة البدنية...</p>
+      <a href="blog.html" class="read-more-btn">اقرئي المزيد</a>
+    </article>
+  
+    <!-- مقال ثاني -->
+    <article class="blog-post">
+      <h3>أفضل النصائح لتغذية رياضية مثالية</h3>
+      <p>ما هي الأطعمة التي تحتاجين إليها لتحقيق أفضل أداء أثناء التمرين؟ وكيفية تحسين أدائك الغذائي...</p>
+      <a href="blog.html" class="read-more-btn">اقرئي المزيد</a>
+    </article>
+  
+    <!-- مقال ثالث -->
+    <article class="blog-post">
+      <h3>كيف تبدأين روتين رياضي جديد بثقة</h3>
+      <p>تعرفي على كيفية البدء في ممارسة الرياضة بخطوات بسيطة وآمنة لتحقيق نتائج فعّالة...</p>
+      <a href="blog.html" class="read-more-btn">اقرئي المزيد</a>
+    </article>
+  </section>
+  
 </section>
 
 
@@ -93,9 +126,30 @@
 </section>
 </main>
 
+
+<section class="social-media">
+  <h2>تابعنا على وسائل التواصل الاجتماعي</h2>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/nada.kadry.338?mibextid=ZbWKwL" target="_blank" class="social-icon facebook">
+      <img src="facebook-icon.png" alt="فيسبوك">
+    </a>
+    <a href="https://www.instagram.com/nada_el3tky26/profilecard/?igsh=MWFmZzl0cWp0enJ5OA==" target="_blank" class="social-icon instagram">
+      <img src="instagram-icon.png" alt="إنستجرام">
+    </a>
+    <a href="https://www.youtube.com/@nadaElatky2" target="_blank" class="social-icon youtube">
+      <img src="youtube-icon.png" alt="يوتيوب">
+    </a>
+  </div>
+</section>
+
+
+
     <footer>
 
         <p>جميع الحقوق محفوظة ©2025 </p>
     </footer>
+    <script src="script.js"></script>
+
+
 </body>
 </html>
